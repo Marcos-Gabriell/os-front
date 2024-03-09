@@ -3,7 +3,9 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { OS } from 'src/app/models/OS';
+import { ClienteService } from 'src/app/services/cliente.service';
 import { OsService } from 'src/app/services/os.service';
+import { TecnicoService } from 'src/app/services/tecnico.service';
 
 
 @Component({
@@ -23,7 +25,9 @@ export class OsReadComponent implements AfterViewInit {
 
   constructor
   (private service : OsService,
-    private router : Router) {}
+    private router : Router,
+    private tecnicoService : TecnicoService,
+    private clienteService : ClienteService) {}
 
   ngAfterViewInit() {
      this.findAll();
@@ -32,6 +36,8 @@ export class OsReadComponent implements AfterViewInit {
   findAll(): void {
     this.service.findAll().subscribe((resposta) => {
       this.lista = resposta;
+      this.listartecnico();
+      this.listarCliente();
       this.dataSource = new MatTableDataSource<OS>(this.lista);
       this.dataSource.paginator = this.paginator;
     })
@@ -39,5 +45,21 @@ export class OsReadComponent implements AfterViewInit {
 
   navigateToCreate():void {
     this.router.navigate(['lista/create'])
+  }
+
+  listartecnico():void {
+    this.lista.forEach(x => {
+      this.tecnicoService.findById(x.tecnico).subscribe(resposta => {
+        x.tecnico = resposta.nome
+      })
+     })
+  }
+
+  listarCliente(): void {
+    this.lista.forEach(x => {
+      this.clienteService.findById(x.cliente).subscribe(resposta => {
+        x.cliente = resposta.nome
+      })
+    })
   }
 }

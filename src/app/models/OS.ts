@@ -7,6 +7,6 @@ export interface OS{
     observaçoes: String;
     status: any;
     tecnico: any;
-    clientw: any;
+    cliente: any;
     
 }
