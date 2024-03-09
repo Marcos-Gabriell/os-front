@@ -1,0 +1,51 @@
+.create {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.create h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+ 
+.create button {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+}
+
+#edit {
+    color: rgb(243, 235, 18);
+}
+
+#delete {
+    color: rgb(236, 73, 73);
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%; 
+        padding: 15px 10px; 
+    }
+    .create h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .create button {
+        margin: 1.5rem auto;
+    }
+    .cell-width {
+        width: .1rem;
+      }
+      
+}
