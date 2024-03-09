@@ -1,0 +1,24 @@
+.container {
+    width: 20%;
+    margin: auto;
+    padding: 5rem 3rem;
+    border-radius: 2rem;
+}
+
+.labels {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    
+}
+.full-width {
+    width: 75%;
+}
+textarea {
+    min-height: 2rem;
+    max-height: 15rem;
+}
+
+button {
+    width: 100%;
+    margin-bottom: .8rem;
+}

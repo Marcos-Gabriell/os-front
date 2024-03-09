@@ -44,7 +44,7 @@ export class OsReadComponent implements AfterViewInit {
   }
 
   navigateToCreate():void {
-    this.router.navigate(['lista/create'])
+    this.router.navigate(['os/create'])
   }
 
   listartecnico():void {
@@ -62,4 +62,16 @@ export class OsReadComponent implements AfterViewInit {
       })
     })
   }
+
+  prioridade(x : any) {
+    if(x == 'BAIXA') {
+      return 'baixa'
+    } else if(x == 'MEDIA') {
+      return 'media'
+    } else{
+      return 'alta'
+    }
+  }
+
+  
 }

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="labels">
+        <mat-form-field>
+            <mat-label>Selecione um técnico</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option *ngFor="let tec of tecnicos" valeu="tec.id">{{ tec.nome }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Selecione um técnico</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option *ngFor="let tec of tecnicos" valeu="tec.id">{{ tec.nome }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Selecione um status</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option  valeu="0">ABERTO</mat-option>
+              <mat-option  valeu="1">EM ANDAMENTO</mat-option>
+              <mat-option  valeu="2">ENCERRADO</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Selecione uma prioridade</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option  valeu="0">BAIXA</mat-option>
+              <mat-option  valeu="1">MÉDIA</mat-option>
+              <mat-option  valeu="2">ALTA</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+    </div>
+
+    <form class="form">
+        <mat-form-field class="full-width">
+          <mat-label>Adicione as observações da ordem de serivço</mat-label>
+          <textarea matInput maxlength="255"></textarea>
+        </mat-form-field>
+      </form>
+
+      <button mat-stroked-button color="accent">CRIAR</button>
+      <button mat-stroked-button color="warn">CANCELAR</button>
+</div>
