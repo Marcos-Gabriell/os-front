@@ -6,13 +6,15 @@
 }
 
 .labels {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
 }
+
 .full-width {
-    width: 75%;
+    width: 100%;
 }
+
 textarea {
     min-height: 2rem;
     max-height: 15rem;
@@ -20,5 +22,6 @@ textarea {
 
 button {
     width: 100%;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
 }
+
