@@ -32,9 +32,10 @@ table {
     color: rgb(236, 73, 73);
 }
 
-td.baixa{
-    color: rgb(6, green,255 6);
+td.baixa {
+    color: green; /* ou rgba(0, 255, 0, 1) */
 }
+
 
 td.media{
     color: yellow;
