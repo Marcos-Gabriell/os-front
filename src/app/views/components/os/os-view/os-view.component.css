@@ -28,6 +28,19 @@ h1 {
     font-weight: bold;
 }
 
+.baixa {
+    color: green;
+}
+
+.media {
+    color: yellow;
+}
+
+.alta {
+    color: red;
+}
+
+
 .button-container {
     display: flex;
     justify-content: center;

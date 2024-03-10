@@ -2,9 +2,12 @@
     <h1>Detalhes da Ordem de Serviço</h1>
 
     <div class="os-info mat-elevation-28">
-        <p>Cliente: {{ clienteNome }}</p>
-        <p>Técnico: {{ tecnicoNome }}</p>
-        <p><strong>Prioridade:</strong> {{ os.prioridade }}</p>
+        <p><strong>Cliente:</strong> {{ clienteNome }}</p>
+        <p><strong>Técnico:</strong> {{ tecnicoNome }}</p>
+        <p>
+            <strong>Prioridade: </strong> 
+            <span [ngClass]="prioridadeClass(os.prioridade)">{{ os.prioridade }}</span>
+        </p>
         <p><strong>Status:</strong> {{ os.status }}</p>
         <p><strong>Observações:</strong> {{ os.observacoes }}</p>
     </div>

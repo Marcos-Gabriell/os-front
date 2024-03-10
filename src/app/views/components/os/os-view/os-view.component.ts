@@ -59,6 +59,20 @@ export class OsViewComponent implements AfterViewInit {
     });
   }
 
+  prioridadeClass(prioridade: string): string {
+    switch (prioridade) {
+        case 'BAIXA':
+            return 'baixa';
+        case 'MEDIA':
+            return 'media';
+        case 'ALTA':
+            return 'alta';
+        default:
+            return '';
+    }
+}
+
+
   voltar(): void {
     this.router.navigate(['os'])
   }
