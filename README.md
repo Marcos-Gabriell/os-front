@@ -46,7 +46,5 @@ Assista a uma breve apresentação do projeto OS-API no vídeo abaixo:
 
 [![Apresentação do Projeto OS-API]](https://youtu.be/6Ni31MxkdB8)
 
-Neste vídeo, você terá uma visão geral das funcionalidades, tecnologias utilizadas e instruções básicas para execução do projeto.
-
 
 Esse README fornece uma visão geral do projeto OS Front End, destacando suas funcionalidades, tecnologias utilizadas e instruções básicas para execução. Se houver alguma dúvida ou questão adicional, não hesite em entrar em contato ou consultar a documentação disponível no código-fonte.
