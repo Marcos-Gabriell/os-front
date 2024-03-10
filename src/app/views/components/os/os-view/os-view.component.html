@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Detalhes da Ordem de Serviço</h1>
+
+    <div class="os-info mat-elevation-28">
+        <p>Cliente: {{ clienteNome }}</p>
+        <p>Técnico: {{ tecnicoNome }}</p>
+        <p><strong>Prioridade:</strong> {{ os.prioridade }}</p>
+        <p><strong>Status:</strong> {{ os.status }}</p>
+        <p><strong>Observações:</strong> {{ os.observacoes }}</p>
+    </div>
+
+    <div class="button-container">
+        <button (click)="voltar()" class="mat-elevation-z8" mat-stroked-button color="warn">Voltar</button>
+    </div>
+</div>
